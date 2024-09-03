@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(75, 209, 219);
+}
+h1{
+    background-color: rgb(17, 41, 61);
+    color: aliceblue;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 30px;
+    opacity: 0.5;
+    transition: 2s;
+}
+
+h1:hover{
+    /*Evento de apoyar el mouse*/
+    opacity: 1;
+    transition: 2s;
+    border-radius: 0px;
+    color: black;
+    background-color: aquamarine;
+    
+/*  h1()       selector de tipo
+    #titulo    selector de id
+    .clase     selector de clase */
+}
+
+#formulario{
+    background-color: aquamarine;
+    margin:25px;
+    padding: 20px;
+    border-radius:15px;
+}
+/*
+#nro1{
+    color: blueviolet;
+}
+
+#nro2{
+    color: crimson;
+}
+*/
+
+.caja{
+    color: blue;
+    background-color:aqua ;
+    padding: 8px;
+    border-style: none;
+    border-radius: 15px;
+    
+}
+
+.caja:hover{
+    background-color: azure;  
+}
+
+.cajatexto{
+    width: 200px;
+}
+
+.cajaselect{
+    width: 215px;
+}
+.etiqueta{
+    color:blue
+}
+
+.boton{
+   width: 160px;
+   margin: 10px;
+   padding: 10px;
+   border-style: none;
+   border-radius: 20px;
+   opacity: 0.5;
+   color:rgb(0, 0, 0); 
+}
+
+.boton:hover{
+    opacity: 1;
+}
+
+.botonOk{
+    background-color: chartreuse;
+}
+
+.botonDel{
+    background-color: brown;
+}
+

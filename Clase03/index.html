@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <!--
+        Nombre: <input type="text"><br>
+        Apellido: <input type="text">
+        -->
+        <table>
+            <tr>
+                <td><label>Nombre:</label></td>
+                <td>
+                    <input type="text" required 
+                            minlength="3" maxlength="25">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Apellido:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Password:</label></td>
+                <td><input type="password" ></td>
+            </tr>
+            <tr>
+                <td><label>Edad:</label></td>
+                <td>
+                    <input type="number" value="18" 
+                        min="18" max="120"></td>
+            </tr>
+            <tr>
+                <td><label>Fecha de Nacimiento:</label></td>
+                <td><input type="date" max="2022-02-02"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label>Estado Civil:</label></td>
+                <td>
+                    <select>
+                        <option>Soltero</option>
+                        <option>Casado</option>
+                        <option>Viudo</option>
+                        <option>Divorciado</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Genero:</label></td>
+                <td>
+                    <input type="radio" name="genero">Femenino<br>
+                    <input type="radio" name="genero">Masculino<br>
+                    <input type="radio" name="genero">X<br>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Vehiculo:</label></td>
+                <td>
+                    <input type="checkbox">Bicicleta<br>
+                    <input type="checkbox">Moto<br>
+                    <input type="checkbox">Auto<br>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Vehiculo:</label></td>
+                <td><textarea rows="10" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Borrar"></td>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

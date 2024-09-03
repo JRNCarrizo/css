@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+
+    <!-- Construir el servlet de calculadora! -->
+
+    <form action="http://localhost:8080/calculadora">
+        <table>
+
+
+            <tr>
+                <td><label>Nro1: </label></td>
+                <td><input type="number" name="nro1" value="0"></td>
+            </tr>
+            <tr>
+                <td><label>Nro1: </label></td>
+                <td><input type="number" name="nro2" value="0"></td>
+            </tr>
+            <tr>
+                <td><label>Operación: </label></td>
+                <td>
+                    <select name="operacion" >
+                        <option value="suma"    >sumar      </option>
+                        <option value="resta"   >restar     </option>
+                        <option value="divi"    >dividir    </option>
+                        <option value="multi"   >multiplicar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Calcular"></td>
+                <td><input type="reset"  value="Borrar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

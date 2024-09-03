@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+
+    <!-- Construir el servlet de calculadora! -->
+
+    <form id="formulario">
+        <table>
+
+
+            <tr>
+                <td><label class="etiqueta">Nro1: </label></td>
+                <td><input class="caja cajatexto" type="number" id="nro1" value="0"></td>
+            </tr>
+            <tr>
+                <td><label class="etiqueta">Nro2: </label></td>
+                <td><input class="caja cajatexto" type="number" id="nro2" value="0"></td>
+            </tr>
+            <tr>
+                <td><label class="etiqueta">Operación: </label></td>
+                <td>
+                    <select class="caja cajaselect" id="operacion" >
+                        <option value="suma"    >sumar      </option>
+                        <option value="resta"   >restar     </option>
+                        <option value="divi"    >dividir    </option>
+                        <option value="multi"   >multiplicar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="boton botonOk" type="button" value="Calcular" onclick="calcular()"></td>
+                <td><input class="boton botonDel" type="reset"  value="Borrar"></td>
+            </tr>
+            <tr>
+                <td><label class="etiqueta">Resultado: </label></td>
+                <td><input class="caja cajatexto" type="text" id="resultado" value="0" readonly></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="js/calculadora.js"></script>
+</body>
+
+</html>
